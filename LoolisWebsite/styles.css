@@ -1,0 +1,108 @@
+/* Apply the cute cursive font to the whole site */
+body {
+    background: url('https://www.transparenttextures.com/patterns/hearts.png'), #ffe6f0;
+    font-family: "Times New Roman", Times, serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styles */
+header {
+    background: #ffb6c1;
+    color: white;
+    padding: 20px;
+    font-family: 'Pacifico', cursive; /* A more decorative font for the header */
+}
+
+/* Navigation links */
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Main content styles */
+main {
+    padding: 50px;
+}
+
+/* Style the intro section with a cute font */
+.intro {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    width: 50%;
+    margin: 0 auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-size: 22px; /* Slightly larger text */
+}
+
+/* Styling for the Main Page Image */
+.main-image {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 15px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: block;
+}
+
+/* Gallery Section */
+.gallery {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Masonry Layout for the Gallery */
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+    padding: 20px;
+}
+
+/* Styles for Gallery Images */
+.gallery-image {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover Effect for Gallery Images */
+.gallery-image:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .gallery-container {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+
+    .main-image {
+        max-width: 90%;
+    }
+}
+
+/* Footer styles */
+footer {
+    background: #ffb6c1;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+    font-family: 'Pacifico', cursive;
+}
